@@ -1,0 +1,14 @@
+<div class="container">
+<h1>{{titulo}}</h1>
+
+    <input style="color:black" type="text" #nombrec>
+  <button style="color: azure;" (click)="addCurso(nombrec.value)" class="btn btn-primary m-auto" class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+  
+ 
+ 
+<ul>
+    <div *ngFor="let nom of cursos">
+        <li>{{nom}}</li>
+    </div>
+</ul>
+</div>
